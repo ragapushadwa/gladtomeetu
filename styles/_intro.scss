@@ -33,7 +33,7 @@ nav {
     padding-top: 2rem;
     background: $gradient;
     background-clip: text;
-    
+    -webkit-text-fill-color: none !important;
     display: inline-block;
   }
   h3 {
