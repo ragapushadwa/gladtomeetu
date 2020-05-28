@@ -29,6 +29,7 @@ nav {
   @include flex(space-between, center, row);
   h2 {
     font-size: 8rem;
+    
     padding-top: 2rem;
     background: $gradient;
     background-clip: text;
