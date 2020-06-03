@@ -29,11 +29,10 @@ nav {
   @include flex(space-between, center, row);
   h2 {
     font-size: 8rem;
-    
     padding-top: 2rem;
     background: $gradient;
     background-clip: text;
-    -webkit-text-fill-color: none !important;
+    -webkit-text-fill-color: red !important;
     display: inline-block;
   }
   h3 {
