@@ -156,6 +156,7 @@ nav ul {
   color: #2c2c2c;
 }
 
+
 .splash {
   position: absolute;
   top: 0%;
@@ -303,12 +304,53 @@ nav ul {
   margin: 5rem;
 }
 
+
+
 .travelly,
 .elena {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
 }
+
+.raga-intro{
+  display: flex;
+  flex-wrap: wrap;
+  
+ }
+.raga-intro img{
+  width: 100%;
+  height:vh;
+  
+  
+}
+
+.raga-img{
+  flex:1 1 20rem;
+  background: lightblue;
+
+  
+}
+
+.raga-text{
+  flex:1 1 20rem;
+  display: flex;
+  background-color: pink;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  
+  
+}
+
+.raga-text h2{
+  padding: 3rem;
+}
+.raga-text p{
+  padding: 5rem;
+}
+
 
 .form-section {
   min-height: 80vh;
