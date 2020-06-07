@@ -320,20 +320,21 @@ nav ul {
  }
 .raga-intro img{
   width: 100%;
-  height:vh;
+  height: 100%;
+  
   
   
 }
 
 .raga-img{
-  flex:1 1 20rem;
+  flex:1 1 40rem;
   background: lightblue;
-
+  
   
 }
 
 .raga-text{
-  flex:1 1 20rem;
+  flex:1 1 40rem;
   display: flex;
   background-color: pink;
   flex-direction: column;
