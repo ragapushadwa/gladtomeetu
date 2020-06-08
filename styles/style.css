@@ -352,9 +352,7 @@ nav ul {
   padding: 5rem;
 }
 
-.raga-text p:nth-child(3){
-justify-content: right;
-}
+
 .form-section {
   min-height: 80vh;
   display: -webkit-box;
