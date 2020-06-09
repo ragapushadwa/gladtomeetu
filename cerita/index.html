@@ -14,6 +14,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/select.css">
+    
     <title>How Much I Miss U</title>
   </head>
   <body>
@@ -25,13 +27,25 @@
         </div>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a  href="../index.html">Scroll It To The Bottom</a></li>
+          <li><a  href="../index.html">Past</a></li>
           <li><a  href="../contact/index.html">Message</a></li>
           <li><a class="active" href="./cerita/index.html">Love</a></li>
         </ul>
       </nav>
     </header>
+    <div class="kotak">
+  <select id="kotak1">
+    <option value="">Choose Story</option>
+    <option value="1">Awal Kuliah</option>
+    <option value="2">Pertama Ke Malang</option>
+    
+    
+  </select>
+</div>
     <section class="raga-intro">
+     
+  
+</div>
       <div class="raga-img">
        <img src="../img/kuliah.jpg" alt="">
       </div>                      
@@ -44,11 +58,11 @@
         </div>
 
          </section>
-         <section class="raga-intro">
-          <div class="raga-img">
+         <section class="raga-intro1">
+          <div class="raga-img1">
            <img src="../img/10979704_656397441154886_1463938254_n.jpg" alt="">
           </div>                      
-            <div class="raga-text">
+            <div class="raga-text1">
             <h2>Pertama Ke Malang</h2>
             <p>Nah kalau foto ini pas aku pertama kali ke malang. Kita ke BNS, itu kalo gak salah kayak yang naik kora-kora itu ya? Terus keliling BNS foto-foto dilampion. Makan jagung susu keju, marshmellow yang ada coklatnya. Dengerin live music everyday i love you boyzone sama selamanya cinta. Haru biru banget kayaknya ya. Tapi aku seneng bgt itu. Seneng campur sedih sih. Besok harinya yang lucu kita nyobain ke daerah apa tuh yang rada naik dari batu, terus makan di warung kayak dipuncak eh pulangnya nyasar wkwkwkwk. Besoknya deh yang sedih aku pulang ke jakarta huhu. But one of the golden memorynya sih pas pertama aku kemalang. Inget banget diajakin kamu makan ramen yang banyak itu. Pengen sih kayak gitu lagi. Tapi gak tau kamu wkwkwkwk/</p>
              <p>Note: Fotonya cuma ada foto itu soalnya kayaknya banyakan foto dari kamera hape kamu. Tapi paling kamu juga udah gak ada sih fotonya. Yasudah tidak apa2</p>
@@ -62,8 +76,26 @@
       <audio controls autoplay src="../img/Banda Neira - Sampai Jadi Debu.mp3"></audio>
     
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
+  
 </html>
 <script>
-  document.querySelector(".cerita").innerHTML= "fsfsfsfsdassssdadadasdadadadadadadadadassssdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  
+  var activities=document.getElementById("kotak1");
+  activities.addEventListener('change', (event) => {
+  const pertama = $('.raga-intro');
+  const kedua = $('.raga-intro1');
+ 
+  if (event.target.value == 1 ) {
+	  pertama.show(1000);
+      kedua.hide();
+	  ; 	  
+  }
+ 
+  else if (event.target.value == 2){
+    kedua.show(1000);
+      pertama.hide();
+  }
+  });
 </script>

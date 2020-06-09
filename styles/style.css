@@ -316,6 +316,7 @@ nav ul {
 .raga-intro{
   display: flex;
   flex-wrap: wrap;
+  display: none;
   
  }
 .raga-intro img{
@@ -352,6 +353,44 @@ nav ul {
   padding: 5rem;
 }
 
+.raga-intro1{
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+ }
+.raga-intro1 img{
+  width: 100%;
+  height: 100%;
+  
+  
+  
+}
+
+.raga-img1{
+  flex:1 1 40rem;
+  background: lightblue;
+  
+  
+}
+
+.raga-text1{
+  flex:1 1 40rem;
+  display: flex;
+  border: solid black 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  
+  
+}
+
+.raga-text1 h2{
+  padding: 3rem;
+}
+.raga-text1 p{
+  padding: 5rem;
+}
 
 .form-section {
   min-height: 80vh;
