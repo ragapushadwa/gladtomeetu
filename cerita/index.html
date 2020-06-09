@@ -33,6 +33,7 @@
         </ul>
       </nav>
     </header>
+    <section class="selectbox">
     <div class="kotak">
   <select id="kotak1">
     <option value="">Choose Story</option>
@@ -42,10 +43,11 @@
     
   </select>
 </div>
+</section>
+
     <section class="raga-intro">
-     
-  
-</div>
+      
+
       <div class="raga-img">
        <img src="../img/kuliah.jpg" alt="">
       </div>                      
@@ -88,13 +90,13 @@
   const kedua = $('.raga-intro1');
  
   if (event.target.value == 1 ) {
-	  pertama.show(1000);
+	  pertama.css('display','flex');
       kedua.hide();
 	  ; 	  
   }
  
   else if (event.target.value == 2){
-    kedua.show(1000);
+    kedua.css('display','flex',1000);
       pertama.hide();
   }
   });

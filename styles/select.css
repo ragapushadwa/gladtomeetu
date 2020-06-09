@@ -8,11 +8,15 @@
   html {
     font-size: 62.5%;
   }
-  
+  .selectbox{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+  }
   .kotak {
     display: flex;
-    justify-content:center;
-    align-items: flex-end;
+    
     
   }
   
