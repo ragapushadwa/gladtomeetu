@@ -27,16 +27,16 @@
         </div>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a  href="../index.html">Past</a></li>
+          <li><a  href="../projects/index.html">Past</a></li>
           <li><a  href="../contact/index.html">Message</a></li>
-          <li><a class="active" href="./cerita/index.html">Love</a></li>
+          <li><a class="active" href="../cerita/index.html">Love</a></li>
         </ul>
       </nav>
     </header>
     <section class="selectbox">
     <div class="kotak">
   <select id="kotak1">
-    <option value="">Choose Story</option>
+    <option value="0">Choose Story</option>
     <option value="1">Awal Kuliah</option>
     <option value="2">Pertama Ke Malang</option>
     
@@ -97,6 +97,11 @@
  
   else if (event.target.value == 2){
     kedua.css('display','flex',1000);
+      pertama.hide();
+  }
+  
+  else if (event.target.value == 0){
+    kedua.hide;
       pertama.hide();
   }
   });
