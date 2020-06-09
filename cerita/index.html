@@ -39,6 +39,7 @@
     <option value="0">Choose Story</option>
     <option value="1">Awal Kuliah</option>
     <option value="2">Pertama Ke Malang</option>
+    <option value="3">Puncak</option>
     
     
   </select>
@@ -66,15 +67,28 @@
           </div>                      
             <div class="raga-text1">
             <h2>Pertama Ke Malang</h2>
-            <p>Nah kalau foto ini pas aku pertama kali ke malang. Kita ke BNS, itu kalo gak salah kayak yang naik kora-kora itu ya? Terus keliling BNS foto-foto dilampion. Makan jagung susu keju, marshmellow yang ada coklatnya. Dengerin live music everyday i love you boyzone sama selamanya cinta. Haru biru banget kayaknya ya. Tapi aku seneng bgt itu. Seneng campur sedih sih. Besok harinya yang lucu kita nyobain ke daerah apa tuh yang rada naik dari batu, terus makan di warung kayak dipuncak eh pulangnya nyasar wkwkwkwk. Besoknya deh yang sedih aku pulang ke jakarta huhu. But one of the golden memorynya sih pas pertama aku kemalang. Inget banget diajakin kamu makan ramen yang banyak itu. Pengen sih kayak gitu lagi. Tapi gak tau kamu wkwkwkwk/</p>
+            <p>Nah kalau foto ini pas aku pertama kali ke malang. Kita ke BNS, itu kalo gak salah kayak yang naik kora-kora itu ya? Terus keliling BNS foto-foto dilampion. Makan jagung susu keju, marshmellow yang ada coklatnya. Dengerin live music everyday i love you boyzone sama selamanya cinta. Haru biru banget kayaknya ya. Tapi aku seneng bgt itu. Seneng campur sedih sih. Besok harinya yang lucu kita nyobain ke daerah apa tuh yang rada naik dari batu, terus makan di warung kayak dipuncak eh pulangnya nyasar wkwkwkwk. Besoknya deh yang sedih aku pulang ke jakarta huhu. But one of the golden memorynya sih pas pertama aku kemalang. Inget banget diajakin kamu makan ramen yang banyak itu. Pengen sih kayak gitu lagi. Tapi gak tau kamu wkwkwkwk</p>
              <p>Note: Fotonya cuma ada foto itu soalnya kayaknya banyakan foto dari kamera hape kamu. Tapi paling kamu juga udah gak ada sih fotonya. Yasudah tidak apa2</p>
              <p><b>8 Juni 2020</b></p>
              <p><b>Raga Pushadwa Okrian</b></p>
           </div>
     
              </section>
-    <footer>
-      <h4>Raga &copy; 2020</h4>
+         <section class="raga-intro2">
+          <div class="raga-img2">
+           <img src="../img/IMG-20121221-01336.jpg" alt="">
+          </div>                      
+            <div class="raga-text2">
+            <h2>Puncak</h2>
+            <p>Ini tuh kita ke puncak pas beres classmeeting apa gmana sih aku lupa? Kita naik bus dari fedex terus ke terminal bogor nyari elf yang ke puncak. Awalnya mah aku sehat2 aja tuh pas kita ke telaga warna puncak. Kita main masuk2 hutan, sampe kamu kejatohan uler, untung ada aku wkwkwk. Terus ketemu kakek2 yang biasa disana ngobrol lah aku sama dia, singkat cerita aku bilang kamu calon istri ku wkwkwkw. Fotonya cuma ada yang ini maaf ya wkwkkw. Terus aku tuh sebetulnya takut gak kedapetan elf yang kebawahnya lagi makanya jam 2 an kalau gak salah kita dah pulang. Dan cerita menyedihkannya berawal dari sini. Aku tewas ternyata entah kenapa pokoknya sejalan pulang dari naik elf sampe kerumah kamu aku tiwas. Untung ada si Adi gendut yang jemput terus dikerokin. Oh iya sebelum pulang pas diterminal bogor kamu beli oleh2 dulu tuh buat mama sama ayah. Tapi lucu ya kalau di inget2. Pengen lg rasanya naik angkutan umum jalan2 berdua sama kamu hehe.</p>
+             <p>Note: Tadi pagi kamu sempet muncul bilang "Ga ngerti" terus nanyain aku masih dijakarta apa udah dijogja, terus ilang deh. Gak ngerti aku sama yang kamu pikir, jalan pikir dan ya gak ngerti lah pokoknya. Terus buat apa ya aku buat beginian wkwkwk it makes look so pathetic. Tapi ya kesepakatannya kan udah ada. If you don't want me on your side , or you want to leave, tell me. I'll take down this website and leave your side :). I'll meet u if u really want me to do that.</p>
+             <p><b>9 Juni 2020</b></p>
+             <p><b>Raga Pushadwa Okrian</b></p>
+          </div>
+    
+             </section>
+         <footer>
+           <h4>Raga &copy; 2020</h4>
       <audio controls autoplay src="../img/Banda Neira - Sampai Jadi Debu.mp3"></audio>
     
     </footer>
@@ -88,6 +102,7 @@
   activities.addEventListener('change', (event) => {
   const pertama = $('.raga-intro');
   const kedua = $('.raga-intro1');
+  const ketiga = $('.raga-intro2');
  
   if (event.target.value == 1 ) {
 	  pertama.css('display','flex');
@@ -98,6 +113,11 @@
   else if (event.target.value == 2){
     kedua.css('display','flex',1000);
       pertama.hide();
+  }
+  else if (event.target.value == 3){
+    ketiga.css('display','flex',1000);
+      pertama.hide();
+      kedua.hide();
   }
   
   else if (event.target.value == 0){

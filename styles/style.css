@@ -313,13 +313,17 @@ nav ul {
           flex: 1 1 40rem;
 }
 
-.raga-intro{
+.raga-intro,
+.raga-intro1,
+.raga-intro2{
   display: flex;
   flex-wrap: wrap;
   display: none;
   
  }
-.raga-intro img{
+.raga-intro img,
+.raga-intro1 img,
+.raga-intro2 img{
   width: 100%;
   height: 100%;
   
@@ -327,14 +331,18 @@ nav ul {
   
 }
 
-.raga-img{
+.raga-img,
+.raga-img1,
+.raga-img2{
   flex:1 1 20rem;
   background: lightblue;
   
   
 }
 
-.raga-text{
+.raga-text,
+.raga-text1,
+.raga-text2{
   flex:1 1 20rem;
   display: flex;
   border: solid black 1rem;
@@ -344,51 +352,18 @@ nav ul {
    
 }
 
-.raga-text h2{
+.raga-text h2,
+.raga-text1 h2,
+.raga-text2 h2{
   padding: 3rem;
 }
-.raga-text p{
+.raga-text p,
+.raga-text1 p,
+.raga-text2 p{
   padding: 5rem;
 }
 
-.raga-intro1{
-  display: flex;
-  flex-wrap: wrap;
-  display: none;
- }
-.raga-intro1 img{
-  width: 100%;
-  height: 100%;
-  
-  
-  
-}
 
-.raga-img1{
-  flex:1 1 40rem;
-  background: lightblue;
-  
-  
-}
-
-.raga-text1{
-  flex:1 1 40rem;
-  display: flex;
-  border: solid black 1rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  
-  
-}
-
-.raga-text1 h2{
-  padding: 3rem;
-}
-.raga-text1 p{
-  padding: 5rem;
-}
 
 .form-section {
   min-height: 80vh;
