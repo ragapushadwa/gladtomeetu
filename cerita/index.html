@@ -107,12 +107,14 @@
   if (event.target.value == 1 ) {
 	  pertama.css('display','flex');
       kedua.hide();
-	  ; 	  
+	ketiga.hide(); 	  
   }
  
   else if (event.target.value == 2){
     kedua.css('display','flex',1000);
       pertama.hide();
+      ketiga.hide();
+
   }
   else if (event.target.value == 3){
     ketiga.css('display','flex',1000);
@@ -123,6 +125,7 @@
   else if (event.target.value == 0){
     kedua.hide;
       pertama.hide();
+     ketiga.hide();
   }
   });
 </script>
