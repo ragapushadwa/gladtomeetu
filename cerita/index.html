@@ -40,6 +40,7 @@
     <option value="1">Awal Kuliah</option>
     <option value="2">Pertama Ke Malang</option>
     <option value="3">Puncak</option>
+    <option value="4">My Special One</option>
     
     
   </select>
@@ -87,6 +88,19 @@
           </div>
     
              </section>
+             <section class="raga-intro3">
+              <div class="raga-img3">
+               <img src="../img/IMG-20121010-01255.jpg" alt="">
+              </div>                      
+                <div class="raga-text3">
+                <h2>The Special One</h2>
+                <p>Kata2 banget? wkwkwk. Sebetulnya gak perlu kata2 sih. Because you're always be my special one. The reason is you. Semua tingkahmu, kegaringan kamu, apapun di diri kamu spesial bagi aku. Kalau kamu inget foto itu, foto itu pas kita kelas 2 SMA, dan mungkin lagi sayang-sayangnya kali ya wkwkwk. Tapi untuk aku walau sekarang dah lewat jauh dari masa itu dan ya gak jelas gitu sekarang wkwkwk, you'll always be my special one and i just need one reason, the reason is you and you'll always be my special one. Hope i can always brighten your day. Love</p>
+                 <p>Note: Kamu ngechat kemarin malemnya terus paginya nelpon. And im happy for it. Oh itu yang apapun tingkah mu kamu spesial tuh maksudnya kalau lagi bener ya wkwkwk.</p>
+                 <p><b>13 Juni 2020</b></p>
+                 <p><b>Raga Pushadwa Okrian</b></p>
+              </div>
+        
+                 </section>
          <footer>
            <h4>Raga &copy; 2020</h4>
       <audio controls autoplay src="../img/Banda Neira - Sampai Jadi Debu.mp3"></audio>
@@ -103,29 +117,39 @@
   const pertama = $('.raga-intro');
   const kedua = $('.raga-intro1');
   const ketiga = $('.raga-intro2');
+  const keempat = $('.raga-intro3');
  
   if (event.target.value == 1 ) {
 	  pertama.css('display','flex');
       kedua.hide();
-	ketiga.hide(); 	  
+	ketiga.hide(); 	 
+  keempat.hide();  
   }
  
   else if (event.target.value == 2){
     kedua.css('display','flex',1000);
       pertama.hide();
       ketiga.hide();
-
+      keempat.hide();  
   }
   else if (event.target.value == 3){
     ketiga.css('display','flex',1000);
       pertama.hide();
       kedua.hide();
+      keempat.hide();  
+  }
+  else if (event.target.value == 4){
+    keempat.css('display','flex',1000);
+      pertama.hide();
+      kedua.hide();
+      ketiga.hide();  
   }
   
   else if (event.target.value == 0){
     kedua.hide;
       pertama.hide();
      ketiga.hide();
+     keempat.hide();  
   }
   });
 </script>
