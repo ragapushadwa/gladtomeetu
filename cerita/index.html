@@ -44,8 +44,16 @@
     
     
   </select>
+
+  
 </div>
 </section>
+
+  <form class="nama" onsubmit="TulisNama(); return false;" name="myname" >
+  <input class="kotaknama"type="text" value="" name="myinput">
+  <button class="tombol">Submit</button>
+</form>
+
 
     <section class="raga-intro">
       
@@ -103,7 +111,7 @@
                  </section>
          <footer>
            <h4>Raga &copy; 2020</h4>
-      <audio controls autoplay src="../img/Banda Neira - Sampai Jadi Debu.mp3"></audio>
+      <audio id="musik" src="" controls autoplay ></audio>
     
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -111,19 +119,25 @@
   
 </html>
 <script>
-  
-  var activities=document.getElementById("kotak1");
-  activities.addEventListener('change', (event) => {
-  const pertama = $('.raga-intro');
+   const pertama = $('.raga-intro');
   const kedua = $('.raga-intro1');
   const ketiga = $('.raga-intro2');
   const keempat = $('.raga-intro3');
+  const raga='raga'
+  const formaing=$('.nama');
+ const lagu=document.getElementById('musik');
+  var activities=document.getElementById("kotak1");
+  activities.addEventListener('change', (event) => {
+ 
  
   if (event.target.value == 1 ) {
 	  pertama.css('display','flex');
       kedua.hide();
 	ketiga.hide(); 	 
   keempat.hide();  
+  formaing.hide();
+  lagu.src="../img/Banda Neira - Sampai Jadi Debu.mp3"
+  
   }
  
   else if (event.target.value == 2){
@@ -131,18 +145,23 @@
       pertama.hide();
       ketiga.hide();
       keempat.hide();  
+      formaing.hide();
   }
   else if (event.target.value == 3){
     ketiga.css('display','flex',1000);
       pertama.hide();
       kedua.hide();
       keempat.hide();  
+      formaing.hide();
+      
   }
   else if (event.target.value == 4){
     keempat.css('display','flex',1000);
       pertama.hide();
       kedua.hide();
-      ketiga.hide();  
+      ketiga.hide(); 
+
+      formaing.hide();
   }
   
   else if (event.target.value == 0){
@@ -150,6 +169,33 @@
       pertama.hide();
      ketiga.hide();
      keempat.hide();  
+     formaing.css('display','flex');
+     lagu.src="#"
   }
   });
+function TulisNama(){
+  if(document.myname.myinput.value=='#'){
+    pertama.css('display','flex');
+      kedua.hide();
+	ketiga.hide(); 	 
+  keempat.hide();  
+  lagu.src="../img/Banda Neira - Sampai Jadi Debu.mp3"
+  
+ 
+}
+else if(document.myname.myinput.value=='#'){
+
+}
+else if(document.myname.myinput.value=='#'){
+
+}
+else if(document.myname.myinput.value=='#'){
+
+}
+else if(document.myname.myinput.value=='#'){
+
+}
+}
+ 
+
 </script>

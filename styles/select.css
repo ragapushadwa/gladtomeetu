@@ -19,7 +19,13 @@
     
     
   }
-  
+  .kotak input{
+    display: flex;
+    width:5rem;
+  }
+  .kotak button{
+    display: flex;
+  }
   .kotak select {
     background-color: white;
     color: black;
@@ -57,3 +63,12 @@
   .kotak select option {
     padding: 30px;
   }
+
+  .nama{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+  }
+ 
+  
