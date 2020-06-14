@@ -41,6 +41,7 @@
     <option value="2">Pertama Ke Malang</option>
     <option value="3">Puncak</option>
     <option value="4">My Special One</option>
+    <option hidden value="5">Is It True?</option>
     
     
   </select>
@@ -63,7 +64,7 @@
       </div>                      
         <div class="raga-text">
         <h2>Awal Kuliah</h2>
-         <p>Inget gak nih? wkwkwk. Dulu aing kesana dikira maba sama anak UB sialan. Dari yang aku inget ya. Aku disana 5 hari. Terus aku dateng pagi-pagi nginep aku minta kamu samperin aku jam 5 pagi terus kamu dateng , tau gak rasanya? seneng bgt wkwkwk. Terus paginya kamu berangkat kuliah aku anter. Terus pas pulangnya aku jemput. Aku ketemu kamu dikosannya Nabila. Besoknya kita main ke jatim park 1 apa 2 ya lupa, sama Valent sama pacarnya juga. Terus kalo gak salah kita juga CFD an. Lupa-lupa inget si tapi aku seneng. Oh iya I'll write my memory on this page. Mine or our sih? wkwkwk. Mine dulu aja deh soalnya nungguin kamu gak muncul2 wkwkwk. Byee.. maaf pagenya masih jelek sambil aku perbaruin hehe</p>
+         <p>Inget gak nih? wkwkwk. Dulu aing kesana dikira maba sama anak UB sialan. Dari yang aku inget ya. Aku disana 5 hari. Terus aku dateng pagi-pagi nginep aku minta kamu samperin aku jam 5 pagi terus kamu dateng , tau gak rasanya? seneng bgt wkwkwk. Terus paginya kamu berangkat kuliah aku anter. Terus pas pulangnya aku jemput. Aku ketemu kamu dikosannya Nabila. Terus kalo gak salah kita juga CFD an. Lupa-lupa inget si tapi aku seneng. Oh iya I'll write my memory on this page. Mine or our sih? wkwkwk. Mine dulu aja deh soalnya nungguin kamu gak muncul2 wkwkwk. Byee.. maaf pagenya masih jelek sambil aku perbaruin hehe</p>
          <p>Note: Kalau kamu dah gak mau aku ada atau kamunya yang pergi bilang ya... Biar aku takedown webnya hehe</p>
          <p><b>7 Juni 2020</b></p>
          <p><b>Raga Pushadwa Okrian</b></p>
@@ -109,7 +110,20 @@
               </div>
         
                  </section>
-         <footer>
+                 <section class="raga-intro4">
+                  <div class="raga-img4">
+                   <img src="../img/11116681_1466076300281538_255361893_n.jpg" alt="">
+                  </div>                      
+                    <div class="raga-text4">
+                    <h2>Is It True?</h2>
+                    <p>Kalau cerita tentang foto ini adalah yang aku 3 hari ke malang bulan maret buat ngerayain ulang tahun kamu, padahal ulang tahun kamu bulan april wkwkw. Gapapa lah ya yang namanya usaha. Aku dateng hari jumat nungguin kamu tuh lama bgt dikampusmu. Dah gitu disuruh solat jumat dulu lagi-_-. Nah aku sempet nulis cerita yang kita kejatim park 1 atau 2 yang sama Valent itu dicerita pertama eh ternyata yang bener dicerita ini deng wkwk. Yang cerita pertama itu kayaknya full kita berdua ya? hehe. Pas hari aku mau pulang ke jakarta kita pergi ke toko kue dulu buat beli kue ulang tahun buat kamu terus ngerayain kecil2an. Dan pas aku mau pulang kamu ternyata mau ikut anterin aku sampe ke bandara di surabaya persis kayak foto yang aku pasang dicerita ini. Aku nulis ini sambil berkaca-kaca dikit wkwk jelek bgt ya. Is it true? Ya semua yang aku tulis, perasaan yang tertuang dan apapunlah, semuanya nyata &#128522.</p>
+                     <p>Note: Emang udah biasa bgt kamu begitu. Begitu apa? Ya hilang. Abis setelah chat2an atau telpon2an terus ya ilang. Mau aku ngomong apa juga begitu. Dan alesan yang menurut aku paling gak logis adalah "Aku anaknya emang lagi ilang2an.". Menurut ku kamu emang ngehindarin aku for something good sih. Im not stupid enough. Mau marah ya gak bisa, oh iya kamu pernah bilang aku gak marah karena aku gak milikin kamu tapi bukan itu, aku gak marah ke kamu karena emang yaudah sudah biasa jadi bego wkwk. I just feel that you don't care about me even a little. Terus kalau kata kamu, kamu peduli sama aku, show me the real things, at least u dont want to make me look like a stupid</p>
+                     <p><b>14 Juni 2020</b></p>
+                     <p><b>Raga Pushadwa Okrian</b></p>
+                  </div>
+            
+                     </section>
+             <footer>
            <h4>Raga &copy; 2020</h4>
       <audio id="musik" src="" controls autoplay ></audio>
     
@@ -123,6 +137,7 @@
   const kedua = $('.raga-intro1');
   const ketiga = $('.raga-intro2');
   const keempat = $('.raga-intro3');
+  const kelima = $('.raga-intro4');
   const raga='raga'
   const formaing=$('.nama');
  const lagu=document.getElementById('musik');
@@ -137,7 +152,7 @@
   keempat.hide();  
   formaing.hide();
   lagu.src="../img/Banda Neira - Sampai Jadi Debu.mp3"
-  
+  kelima.hide();
   }
  
   else if (event.target.value == 2){
@@ -146,6 +161,8 @@
       ketiga.hide();
       keempat.hide();  
       formaing.hide();
+      kelima.hide();
+      lagu.src="#"
   }
   else if (event.target.value == 3){
     ketiga.css('display','flex');
@@ -153,15 +170,26 @@
       kedua.hide();
       keempat.hide();  
       formaing.hide();
-      
+      kelima.hide();
+      lagu.src="#"
   }
   else if (event.target.value == 4){
     keempat.css('display','flex');
       pertama.hide();
       kedua.hide();
       ketiga.hide(); 
-
+      kelima.hide();
       formaing.hide();
+      lagu.src="#"
+  }
+  else if (event.target.value == 5){
+    kelima.css('display','flex');
+    pertama.hide();
+    kedua.hide();
+	  ketiga.hide(); 	 
+    keempat.hide();  
+    formaing.hide();
+    lagu.src="../img/Ten2Five-Hanya UntukMu.mpeg"
   }
   
   else {
@@ -170,17 +198,19 @@
      kedua.hide();
      ketiga.hide();
      keempat.hide();  
-     
+     kelima.hide(); 
      lagu.src="#"
   }
   });
 function TulisNama(){
-  if(document.myname.myinput.value=='#'){
-    pertama.css('display','flex');
-      kedua.hide();
-	ketiga.hide(); 	 
-  keempat.hide();  
-  lagu.src="../img/Banda Neira - Sampai Jadi Debu.mp3"
+  if(document.myname.myinput.value=='Gladys'){
+    kelima.css('display','flex');
+    pertama.hide();
+    kedua.hide();
+	  ketiga.hide(); 	 
+    keempat.hide();  
+    formaing.hide();
+    lagu.src="../img/Ten2Five-Hanya UntukMu.mpeg"
   
  
 }

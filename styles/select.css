@@ -64,12 +64,14 @@
     padding: 30px;
   }
 .coba{
-  background-color:#0be881;
+  background-color:rgba(11,232,129,0.5);
+  
+
 }
   .nama{
     min-height: 5vh;
     display: flex;
-    width:90% ;
+    width:40% ;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -77,11 +79,11 @@
   
   }
   .kotaknama{
-    display: flex;
-    flex: 1 1 20rem;
+   
+    flex: 1 1 5rem;
   }
   .tombol{
-    flex:1 1 20rem;
+    flex:1 1 1rem;
   }
 
  
