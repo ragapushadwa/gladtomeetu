@@ -63,12 +63,26 @@
   .kotak select option {
     padding: 30px;
   }
-
+.coba{
+  background-color:#0be881;
+}
   .nama{
+    min-height: 5vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    width:90% ;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+     
   
   }
+  .kotaknama{
+    display: flex;
+    flex: 1 1 20rem;
+  }
+  .tombol{
+    flex:1 1 20rem;
+  }
+
  
   
