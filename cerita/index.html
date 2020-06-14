@@ -119,7 +119,7 @@
   
 </html>
 <script>
-   const pertama = $('.raga-intro');
+  const pertama = $('.raga-intro');
   const kedua = $('.raga-intro1');
   const ketiga = $('.raga-intro2');
   const keempat = $('.raga-intro3');
@@ -141,14 +141,14 @@
   }
  
   else if (event.target.value == 2){
-    kedua.css('display','flex',1000);
+    kedua.css('display','flex');
       pertama.hide();
       ketiga.hide();
       keempat.hide();  
       formaing.hide();
   }
   else if (event.target.value == 3){
-    ketiga.css('display','flex',1000);
+    ketiga.css('display','flex');
       pertama.hide();
       kedua.hide();
       keempat.hide();  
@@ -156,7 +156,7 @@
       
   }
   else if (event.target.value == 4){
-    keempat.css('display','flex',1000);
+    keempat.css('display','flex');
       pertama.hide();
       kedua.hide();
       ketiga.hide(); 
@@ -164,12 +164,13 @@
       formaing.hide();
   }
   
-  else if (event.target.value == 0){
-    kedua.hide;
-      pertama.hide();
+  else {
+    formaing.css('display','flex');
+     pertama.hide();
+     kedua.hide();
      ketiga.hide();
      keempat.hide();  
-     formaing.css('display','flex');
+     
      lagu.src="#"
   }
   });
