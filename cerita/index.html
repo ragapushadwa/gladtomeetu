@@ -163,6 +163,19 @@
                               </div>
                         
                                  </section>
+                                 <section class="raga-intro8">
+                                  <div class="raga-img8">
+                                   <img src="../img/IMG_0116.JPG" alt="">
+                                  </div>                      
+                                    <div class="raga-text8">
+                                    <h2>Bingung?</h2>
+                                     <p>Sama seperti judulnya sebetulnya aku bingung mau nulis apa dan masang foto apa wkwk. Stok foto momen2 unik juga sudah mulai hilang sprtinya wkwkk. Jadi nulis apa ya? Oh iya tadi kan katanya suruh nanya ke aku buat lanjutan ceritannya, terus aku bilang malem aja, bener kan ujung2nya kamu ilang wkwk untung belom aku kasih tau. Sama nanti aku juga misal dah ada semua2nya ke jogja aku juga gak bakal bilang2, nanti kalo dah dijogja kalau aku mau ke malang juga aku gak bakal bilang2, biarin aja wkwk :p. Pokoknya kalau kamu ilang ya aku juga gak akan kasih tau kamu apa2. Semisal entar aku dah siap berangkat ke malang terus ternyata kamunya lagi ilang2an ya aku sih biarin aja. Tetep berangkat ke malang walau kamunya juga gak tau, jalan2 sendiri terus kalau emang 1 hari disana kamu gak muncul ya pulang lagi aja kan wkwkwk. Disaat kamu bisa ilang dan muncul sesuka mu, kenapa aku tidak? hehew. See u, aku bisa datang kapan aja.. byeee.</p>
+                                     
+                                     <p><b>28 Juni 2020</b></p>
+                                     <p><b>Raga Pushadwa Okrian</b></p>
+                                  </div>
+                            
+                                     </section>
              <footer>
            <h4>Raga &copy; 2020</h4>
       <audio id="musik" src="" controls autoplay ></audio>
@@ -181,6 +194,7 @@
   const keenam = $('.raga-intro5');
   const ketujuh = $('.raga-intro6');
   const kedelapan=$('.raga-intro7');
+  const kesembilan=$('.raga-intro8')
   const raga='raga';
   const formaing=$('.nama');
  const lagu=document.getElementById('musik');
@@ -199,6 +213,7 @@
   keenam.hide();
   ketujuh.hide();
   kedelapan.hide();
+  kesembilan.hide();
   }
  
   else if (event.target.value == 2){
@@ -211,6 +226,7 @@
       keenam.hide();
       ketujuh.hide();
       kedelapan.hide();
+      kesembilan.hide();
       lagu.src="#"
   }
   else if (event.target.value == 3){
@@ -223,6 +239,7 @@
       keenam.hide();
       ketujuh.hide();
       kedelapan.hide();
+      kesembilan.hide();
       lagu.src="#"
   }
   else if (event.target.value == 4){
@@ -235,6 +252,7 @@
       keenam.hide();
       ketujuh.hide();
       kedelapan.hide();
+      kesembilan.hide();
             lagu.src="#"
   }
    
@@ -248,6 +266,7 @@
      keenam.hide(); 
      kedelapan.hide();
      ketujuh.hide();
+     kesembilan.hide();
      lagu.src="#"
   }
   });
@@ -261,6 +280,7 @@ function TulisNama(){
     ketujuh.hide()
     keenam.hide();
     kedelapan.hide();
+    kesembilan.hide();
     lagu.src="../img/Ten2Five-Hanya UntukMu.mpeg"
   
  
@@ -274,6 +294,7 @@ else if(document.myname.myinput.value=='23'){
     kelima.hide();  
     ketujuh.hide();
     kedelapan.hide();
+    kesembilan.hide();
     lagu.src="../img/Andien - Indahnya Dunia.mpeg"
 }
 else if((document.myname.myinput.value=='Pride and Prejudice' || document.myname.myinput.value== 'Pride & Prejudice')){
@@ -285,10 +306,11 @@ else if((document.myname.myinput.value=='Pride and Prejudice' || document.myname
     kelima.hide();
     keenam.hide();
     kedelapan.hide();
+    kesembilan.hide();
    lagu.src="../img/Ten2Five - Love Is You.mp3"
 }
 else if((document.myname.myinput.value=='Honey' || document.myname.myinput.value=='honey')){
-  kedelapan.css('display','flex');
+    kedelapan.css('display','flex');
     pertama.hide();
     kedua.hide();
 	  ketiga.hide(); 	 
@@ -296,11 +318,21 @@ else if((document.myname.myinput.value=='Honey' || document.myname.myinput.value
     kelima.hide();
     keenam.hide();
     ketujuh.hide();
+    kesembilan.hide();
   lagu.src="#"
    
 }
 else if(document.myname.myinput.value=='#'){
-
+    kesembilan.css('display','flex');
+    pertama.hide();
+    kedua.hide();
+	  ketiga.hide(); 	 
+    keempat.hide();
+    kelima.hide();
+    keenam.hide();
+    ketujuh.hide();
+    kedelapan.hide();
+  lagu.src="#"
 }
 }
  
