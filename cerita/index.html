@@ -208,7 +208,8 @@
   const keenam = $('.raga-intro5');
   const ketujuh = $('.raga-intro6');
   const kedelapan=$('.raga-intro7');
-  const kesembilan=$('.raga-intro8')
+  const kesembilan=$('.raga-intro8');
+	const kesepuluh=$('.raga-intro9');
   const raga='raga';
   const formaing=$('.nama');
  const lagu=document.getElementById('musik');
@@ -228,6 +229,7 @@
   ketujuh.hide();
   kedelapan.hide();
   kesembilan.hide();
+	  kesepuluh.hide();
   }
  
   else if (event.target.value == 2){
@@ -242,6 +244,7 @@
       kedelapan.hide();
       kesembilan.hide();
       lagu.src="#"
+	  kesepuluh.hide();
   }
   else if (event.target.value == 3){
     ketiga.css('display','flex');
@@ -254,6 +257,7 @@
       ketujuh.hide();
       kedelapan.hide();
       kesembilan.hide();
+	  kesepuluh.hide();
       lagu.src="#"
   }
   else if (event.target.value == 4){
@@ -267,6 +271,21 @@
       ketujuh.hide();
       kedelapan.hide();
       kesembilan.hide();
+	  kesepuluh.hide();
+            lagu.src="#"
+  }
+	   else if (event.target.value == 5){
+    keempat.hide();
+      pertama.hide();
+      kedua.hide();
+      ketiga.hide(); 
+      kelima.hide();
+      formaing.hide();
+      keenam.hide();
+      ketujuh.hide();
+      kedelapan.hide();
+      kesembilan.hide();
+	  kesepuluh.css('display','flex');
             lagu.src="#"
   }
    
@@ -281,6 +300,7 @@
      kedelapan.hide();
      ketujuh.hide();
      kesembilan.hide();
+	  kesepuluh.hide();
      lagu.src="#"
   }
   });
@@ -295,6 +315,7 @@ function TulisNama(){
     keenam.hide();
     kedelapan.hide();
     kesembilan.hide();
+	  kesepuluh.hide();
     lagu.src="../img/Ten2Five-Hanya UntukMu.mpeg"
   
  
@@ -309,6 +330,7 @@ else if(document.myname.myinput.value=='23'){
     ketujuh.hide();
     kedelapan.hide();
     kesembilan.hide();
+	kesepuluh.hide();
     lagu.src="../img/Andien - Indahnya Dunia.mpeg"
 }
 else if((document.myname.myinput.value=='Pride and Prejudice' || document.myname.myinput.value== 'Pride & Prejudice')){
@@ -321,6 +343,7 @@ else if((document.myname.myinput.value=='Pride and Prejudice' || document.myname
     keenam.hide();
     kedelapan.hide();
     kesembilan.hide();
+	kesepuluh.hide();
    lagu.src="../img/Ten2Five - Love Is You.mp3"
 }
 else if((document.myname.myinput.value=='Honey' || document.myname.myinput.value=='honey')){
@@ -333,6 +356,7 @@ else if((document.myname.myinput.value=='Honey' || document.myname.myinput.value
     keenam.hide();
     ketujuh.hide();
     kesembilan.hide();
+	kesepuluh.hide();
   lagu.src="#"
    
 }
@@ -346,6 +370,7 @@ else if(document.myname.myinput.value=='gelaspecah'){
     keenam.hide();
     ketujuh.hide();
     kedelapan.hide();
+	kesepuluh.hide();
   lagu.src="#"
 }
 }
