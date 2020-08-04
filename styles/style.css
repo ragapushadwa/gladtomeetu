@@ -322,7 +322,8 @@ nav ul {
 .raga-intro6,
 .raga-intro7,
 .raga-intro8,
-.raga-intro9{
+.raga-intro9,
+.raga-intro10{
   display: flex;
   flex-wrap: wrap;
   display: none;
@@ -337,7 +338,8 @@ nav ul {
 .raga-intro6 img,
 .raga-intro7 img,
 .raga-intro8 img,
-.raga-intro9 img
+.raga-intro9 img,
+.raga-intro10 img,
 {
   width: 100%;
   height: 100%;
@@ -355,7 +357,8 @@ nav ul {
 .raga-img6,
 .raga-img7,
 .raga-img8,
-.raga-img9{
+.raga-img9,
+.raga-img10{
   flex:1 1 20rem;
   background: lightblue;
   
@@ -372,7 +375,8 @@ nav ul {
 .raga-text6,
 .raga-text7,
 .raga-text8,
-.raga-text9{
+.raga-text9,
+.raga-text10{
   flex:1 1 20rem;
   display: flex;
   border: solid black 1rem;
@@ -391,7 +395,8 @@ nav ul {
 .raga-text6 h2,
 .raga-text7 h2,
 .raga-text8 h2,
-.raga-text9 h2{
+.raga-text9 h2,
+.raga-text h2{
   padding: 3rem;
 }
 .raga-text p,
@@ -403,7 +408,8 @@ nav ul {
 .raga-text6 p,
 .raga-text7 p,
 .raga-text8 p,
-.raga-text9 p{
+.raga-text9 p,
+.raga-text10 p{
   padding: 5rem;
 }
 
