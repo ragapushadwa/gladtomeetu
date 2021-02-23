@@ -43,6 +43,7 @@
     <option value="4">My Special One</option>
     <option value="5">Hey Girl, I Love U</option>
     <option value="6">Sesuatu yang Pernah Ada, Tidak Akan Kemana-mana</option>
+    <option value="7">Is There Something Lost?</option>
     
     
     
@@ -200,11 +201,24 @@
                                     <h2>Sesuatu yang Sudah Ada Disana, Tidak Pernah Kemana-mana</h2>
                                      <p>Halooooo... Sudah lama sekali ya sampai terakhir tuh kita ketemu akhir Juli, sekarang sudah 2021. Gimana kabar kamu? Semoga baik-baik aja ya. Dari setelah masalah yang itu, ya sesuai judul aja " yang udah disana, ya gak bakal kemana-mana.". Kadang masih suka kepikiran aja, bukan kadang sih lebih frequent tapi gak sering-sering juga hahahah. Pernah juga aku mimpi nikah sama kamu, pas didalam mimpi itu rasanya seneng dan bahagia banget dan anehnya perasaan itu kebawa pas bangun juga hahahaha. Ya karena aku anggap yang sudah pernah ada disana gak akan pernah kemana-mana. Kemarin sempet ngeliat WA story kamu buka the foodies lagi. How's it going?. Ya belum tentu juga sih kamu buka web ini tapi yaudahlah. Kapan-kapan kalau inget dan kalau mau ya hubungin aku aja. It's a happiness when I'm standing next to u. See u okay?</p>                
    
-                                     <p><b>19 February 2020 (sebelum berangkat ke kantor hahah)</b></p>
+                                     <p><b>19 February 2021</b></p>
                                      <p><b>The one and only Raga Pushadwa Okrian</b></p>
                                   </div>
                             
                                      </section>
+                                     <section class="raga-intro11">
+                                      <div class="raga-img11">
+                                       <img src="../img/IMG-20200722-WA0008.jpg" alt="">
+                                      </div>                      
+                                        <div class="raga-text11">
+                                        <h2>Do or Did I Missing Something?</h2>
+                                         <p>Halooooo.. how r u? semoga baik2 saja... Gak tau kenapa kayaknya aku lagi pengen nulis aja. Sudah semingguan ini lah aku ngerasanya kayak kangen aja gitu sama kamu, cuma gak bisa ngapa-ngapain, takut hahaha. Aku biasanya kalo lagi kangen gitu yaa iseng aja ngecekkin kamun online WA apa engga wkwkwk aneh ya, how pathetic I am. Pengen gitu ngechat cuma ya gitu takut ganggu. If I had a chance to meet u, sudah pasti aku laksanakan hahaha. Kamu akan selalu jadi permaisuri bagi Ku. Ya intinya aku kangen lah hahahaha, pengennya ngobrol langsung bukan ngetik, pengennya meluk bukan cuma angan2 doang. Hmmm yasudah segini aja.. semoga kamu sehat dan baik2 aja ya... Aku selalu ada disana gak kemana-mana.</p>                
+       
+                                         <p><b>23 February 2021</b></p>
+                                         <p><b>Raga Pushadwa Okrian</b></p>
+                                      </div>
+                                
+                                         </section>
              <footer>
            <h4>Raga &copy; 2021</h4>
       <audio id="musik" src="" controls autoplay ></audio>
@@ -226,6 +240,7 @@
   const kesembilan=$('.raga-intro8');
 	const kesepuluh=$('.raga-intro9');
 const kesebelas=$('.raga-intro10')
+const keduabelas=$('.raga-intro11')
   const raga='raga';
   const formaing=$('.nama');
  const lagu=document.getElementById('musik');
@@ -247,6 +262,7 @@ const kesebelas=$('.raga-intro10')
   kesembilan.hide();
 	  kesepuluh.hide();
 kesebelas.hide();
+keduabelas.hide();
   }
  
   else if (event.target.value == 2){
@@ -263,6 +279,7 @@ kesebelas.hide();
       lagu.src="#"
 	  kesepuluh.hide();
 kesebelas.hide()
+keduabelas.hide();
   }
   else if (event.target.value == 3){
     ketiga.css('display','flex');
@@ -277,6 +294,7 @@ kesebelas.hide()
       kesembilan.hide();
 	  kesepuluh.hide();
 kesebelas.hide()
+keduabelas.hide();
       lagu.src="#"
   }
   else if (event.target.value == 4){
@@ -292,6 +310,7 @@ kesebelas.hide()
       kesembilan.hide();
 	  kesepuluh.hide();
 kesebelas.hide()
+keduabelas.hide();
             lagu.src="#"
   }
 	   else if (event.target.value == 5){
@@ -307,6 +326,7 @@ kesebelas.hide()
       kesembilan.hide();
 	  kesepuluh.css('display','flex');
 kesebelas.hide()
+keduabelas.hide();
             lagu.src="#"
   }
 
@@ -323,6 +343,23 @@ kesebelas.hide()
       kesembilan.hide();
 	  kesebelas.css('display','flex');
 kesepuluh.hide()
+keduabelas.hide();
+            lagu.src="#"
+  }
+  else if (event.target.value == 7){
+    keempat.hide();
+      pertama.hide();
+      kedua.hide();
+      ketiga.hide(); 
+      kelima.hide();
+      formaing.hide();
+      keenam.hide();
+      ketujuh.hide();
+      kedelapan.hide();
+      kesembilan.hide();
+	  kesebelas.hide();
+kesepuluh.hide()
+keduabelas.css('display','flex');
             lagu.src="#"
   }
   else {
@@ -337,6 +374,7 @@ kesepuluh.hide()
      ketujuh.hide();
      kesembilan.hide();
 	  kesepuluh.hide();
+    keduabelas.hide();
      lagu.src="#"
   }
   });
@@ -352,7 +390,7 @@ function TulisNama(){
     kedelapan.hide();
     kesembilan.hide();
 	  kesepuluh.hide();
-
+    keduabelas.hide();
  
 }
 else if(document.myname.myinput.value=='23'){
@@ -366,7 +404,7 @@ else if(document.myname.myinput.value=='23'){
     kedelapan.hide();
     kesembilan.hide();
 	kesepuluh.hide();
-
+  keduabelas.hide();
 kesebelas.hide()
             
     lagu.src="../img/Andien - Indahnya Dunia.mpeg"
@@ -383,6 +421,7 @@ else if((document.myname.myinput.value=='Pride and Prejudice' || document.myname
     kesembilan.hide();
 	kesepuluh.hide();
  kesebelas.hide();
+ keduabelas.hide();
    lagu.src="../img/Ten2Five - Love Is You.mp3"
 }
 else if((document.myname.myinput.value=='Honey' || document.myname.myinput.value=='honey')){
@@ -396,6 +435,7 @@ else if((document.myname.myinput.value=='Honey' || document.myname.myinput.value
     ketujuh.hide();
     kesembilan.hide();
 	kesepuluh.hide();
+  keduabelas.hide();
 kesebelas.hide();
   lagu.src="#"
    
@@ -412,6 +452,7 @@ else if(document.myname.myinput.value=='gelaspecah'){
     kedelapan.hide();
 	kesepuluh.hide();
 kesebelas.hide();
+keduabelas.hide();
    
             lagu.src="#"
   
