@@ -358,6 +358,28 @@
     </div>
 
   </section>
+  <section class="raga-intro14">
+    <div class="raga-img14">
+      <img src=..img/fotodikereta alt="">
+    </div>
+    <div class="raga-text14">
+      <h2>Train and All the Memory On It</h2>
+      <p>Halooo... apa kabar? sudah lama sekali ya kita tidak bertemu atau yaa seengganya berkomunikasi hehe.. kalau di itung2 yaa bentar lagi setahun
+        kita udah gak ketemu.. soalnya terakhir tuh yang foto aku taru google drive itu aku tulis nya Malang, 22 Juli 2020. Kan bentar lagi udah Juli..
+        eh masih 2 bulan lagi deng tapi gapapa lah ya hahahaha. Sekarang aku nulis ini sambil duduk di kereta.. aku mau jalan2.. cuma tiba2 pas lagi bengong
+        aku keinget pas pertama aku naik kereta jauh. Jakarta-Malang, sama kamu tuh hahahaha. Itu rasanya campur aduk. Seneng karena bisa bareng terus sama kamu
+        terus juga bete karena gak kelar2 tuh keretanya. Kalau gak salah 14 jam ya? beh itu rasanya tai sekali wkwkwk. Tapi karena kesabaran mu dengerin aku yang rewel
+        akhirnya sampe juga waktu itu di malang jam 6 atau jam 7 pagi gitu. Pas turun kereta tuh rasanya mantap sekali. Yaa bersambung dari inget tentang kereta
+        aku juga jadi keinget pertama kali ke Malang.. hahah pengen lagi deh ke Malang, gak ding, pengen kalau di Malangnya sama kamu, kalau sama orang lain mah gak tau deh, bosen kali.
+        Semoga kamu sehat2 terus.. banyak rejekinya.. pokoknya lancar semuanya yaa...
+      </p>
+
+      <p><b>27 Mei 2021</b></p>
+     
+      <p><b>Raga Pushadwa Okrian</b></p>
+    </div>
+
+  </section>
   <footer>
     <h4>Raga &copy; 2021</h4>
     <audio id="musik" src="" controls autoplay></audio>
@@ -382,6 +404,7 @@
   const keduabelas = $('.raga-intro11')
   const ketigabelas = $('.raga-intro12')
   const keempatbelas = $('.raga-intro13')
+  const kelimabelas= $('.raga-intro14')
   const raga = 'raga';
   const formaing = $('.nama');
   const lagu = document.getElementById('musik');
@@ -406,6 +429,7 @@
       keempatbelas.hide();
       keduabelas.hide();
       ketigabelas.hide();
+      kelimabelas.hide();
     } else if (event.target.value == 2) {
       kedua.css('display', 'flex');
       pertama.hide();
@@ -423,7 +447,7 @@
       keempatbelas.hide();
       keduabelas.hide();
       ketigabelas.hide();
-
+      kelimabelas.hide();
     } else if (event.target.value == 3) {
       ketiga.css('display', 'flex');
       pertama.hide();
@@ -440,6 +464,7 @@
       keduabelas.hide();
       keempatbelas.hide();
       ketigabelas.hide();
+      kelimabelas.hide();
       lagu.src = "#"
     } else if (event.target.value == 4) {
       keempat.css('display', 'flex');
@@ -458,6 +483,7 @@
       ketigabelas.hide();
       keempatbelas.hide();
       lagu.src = "#"
+      kelimabelas.hide();
     } else if (event.target.value == 5) {
       keempat.hide();
       pertama.hide();
@@ -475,6 +501,7 @@
       keempatbelas.hide();
       ketigabelas.hide();
       lagu.src = "#"
+      kelimabelas.hide();
     } else if (event.target.value == 6) {
       keempat.hide();
       pertama.hide();
@@ -490,8 +517,9 @@
       kesepuluh.hide()
       keduabelas.hide();
       ketigabelas.hide()
-      keempatbelas.hide();;
-      lagu.src = "#"
+      keempatbelas.hide();
+      kelimabelas.hide();
+      lagu.src = "#";
     } else if (event.target.value == 7) {
       keempat.hide();
       pertama.hide();
@@ -510,6 +538,7 @@
       keduabelas.css('display', 'flex');
       lagu.src = "#"
       keempatbelas.hide();
+      kelimabelas.hide();
     } else if (event.target.value == 8) {
       keempat.hide();
       pertama.hide();
@@ -527,6 +556,7 @@
       ketigabelas.css('display', 'flex');
       keduabelas.hide();
       lagu.src = "#"
+      kelimabelas.hide();
     } else if (event.target.value == 9) {
       keempat.hide();
       pertama.hide();
@@ -544,7 +574,26 @@
       ketigabelas.hide()
       keduabelas.hide();
       lagu.src = "#"
-    } else {
+      kelimabelas.hide();
+    }else if (event.target.value == 10) {
+      keempat.hide();
+      pertama.hide();
+      kedua.hide();
+      ketiga.hide();
+      kelima.hide();
+      formaing.hide();
+      keenam.hide();
+      ketujuh.hide();
+      kedelapan.hide();
+      kesembilan.hide();
+      kesebelas.hide();
+      kesepuluh.hide()
+      kelimabelas.css('display', 'flex');
+      ketigabelas.hide()
+      keduabelas.hide();
+      lagu.src = "#"
+      keempatbelas.hide();
+    }  else {
       formaing.css('display', 'flex');
       pertama.hide();
       kedua.hide();
@@ -560,6 +609,8 @@
       keduabelas.hide();
       lagu.src = "#"
       ketigabelas.hide();
+      kelimabelas.hide();
+      keempatbelas.hide();
     }
   });
 
@@ -578,7 +629,7 @@
       keduabelas.hide();
       keempatbelas.hide();
       kesebelas.hide();
-
+      kelimabelas.hide();
     } else if (document.myname.myinput.value == '23') {
       keenam.css('display', 'flex');
       pertama.hide();
@@ -594,7 +645,7 @@
       kesebelas.hide()
       ketigabelas.hide();
       keempatbelas.hide();
-
+      kelimabelas.hide();
       lagu.src = "../img/Andien - Indahnya Dunia.mpeg"
     } else if ((document.myname.myinput.value == 'Pride and Prejudice' || document.myname.myinput.value ==
         'Pride & Prejudice')) {
@@ -613,6 +664,7 @@
       ketigabelas.hide();
       lagu.src = "../img/Ten2Five - Love Is You.mp3"
       keempatbelas.hide();
+      kelimabelas.hide();
     } else if ((document.myname.myinput.value == 'Honey' || document.myname.myinput.value == 'honey')) {
       kedelapan.css('display', 'flex');
       pertama.hide();
@@ -629,6 +681,7 @@
       lagu.src = "#"
       ketigabelas.hide();
       keempatbelas.hide();
+      kelimabelas.hide();
     } else if (document.myname.myinput.value == 'gelaspecah') {
       kesembilan.css('display', 'flex');
       pertama.hide();
@@ -645,7 +698,8 @@
       ketigabelas.hide();
       keempatbelas.hide();
       lagu.src = "#"
-
+      kelimabelas.hide();
+      
     }
   }
 </script>
