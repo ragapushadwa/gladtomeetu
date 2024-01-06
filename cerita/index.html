@@ -44,6 +44,7 @@
         <option value="9">A Quarter Of Century</option>
         <option value="10">Train and All the Memory On It</option>
         <option value="11">Manusia itu Entitas Tunggal</option>
+        <option value="12">Time Won't Erase You From My Life</option>
 
 
 
@@ -414,8 +415,32 @@
     </div>
 
   </section>
+  <section class="raga-intro16">
+  
+    <div class="raga-text16">
+      <h2>Time Won't Erase You From My Life</h2>
+      <p>
+        Udah 2024 ya sekarang, dari tahun berapa 2011 sampe tahun 2024 ngeliatnya muka kamu lagi muka kamu lagi tapi gapapa 
+        gak ada yang berubah juga, apa yang ku liat ditahun 2024 masih sama kayak aku ngeliat kamu ditahun 2011.
+        Aku minta maaf ya karena apa yang aku lakuin ngebuat kamu jadi sekarang ini, aku juga sedih tapi aku juga sadar gak bisa banyak ngelakuin sesuatu ke kamu
+        Banyak hal yang pengen aku lakuin buat kamu sebetulnya tapi apa daya aku gak bisa apa-apa dan belum tentu juga kamu mau nerima apa yang aku lakuin buat kamu.
+        Sekali lagi aku minta maaf ya, gak sekali lagi aku bakalan terus minta maaf sih kalau buat kamu. Kamu itu hebat, mamah ku aja bilang gitu kemarin pas teleponan sama Aku.
+        Berjuang ya jangan menyerah, aku ada kok, walau ya gitu-gitu aja hehehe.
+      </p>
+      <div class="raga-img16">
+        <video width="300" height="200" preload="auto"
+         src="../img/birthday_raga.m4v" type="video/mp4"
+          autoplay controls></video>
+       
+      </div>
+      <p><b>07 Januari 2024</b></p>
+
+      <p><b>Raga Pushadwa Okrian</b></p>
+    </div>
+
+  </section>
   <footer>
-    <h4>Raga &copy; 2021</h4>
+    <h4>Raga &copy; 2023</h4>
     <audio id="musik" src="" controls autoplay></audio>
 
   </footer>
@@ -440,6 +465,7 @@
   const keempatbelas = $('.raga-intro13')
   const kelimabelas = $('.raga-intro14')
   const keenambelas = $('.raga-intro15')
+  const ketujuhbelas = $('.raga-intro16')
   const raga = 'raga';
   const formaing = $('.nama');
   const lagu = document.getElementById('musik');
@@ -466,6 +492,7 @@
       ketigabelas.hide();
       kelimabelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
     } else if (event.target.value == 2) {
       kedua.css('display', 'flex');
       pertama.hide();
@@ -485,6 +512,7 @@
       ketigabelas.hide();
       kelimabelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
     } else if (event.target.value == 3) {
       ketiga.css('display', 'flex');
       pertama.hide();
@@ -503,6 +531,7 @@
       ketigabelas.hide();
       kelimabelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
       lagu.src = "#"
     } else if (event.target.value == 4) {
       keempat.css('display', 'flex');
@@ -523,6 +552,7 @@
       keenambelas.hide();
       lagu.src = "#"
       kelimabelas.hide();
+      ketujuhbelas.hide();
     } else if (event.target.value == 5) {
       keempat.hide();
       pertama.hide();
@@ -542,6 +572,7 @@
       lagu.src = "#"
       kelimabelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
     } else if (event.target.value == 6) {
       keempat.hide();
       pertama.hide();
@@ -560,6 +591,7 @@
       keempatbelas.hide();
       kelimabelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
       lagu.src = "#";
     } else if (event.target.value == 7) {
       keempat.hide();
@@ -580,6 +612,7 @@
       lagu.src = "#"
       keempatbelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
       kelimabelas.hide();
     } else if (event.target.value == 8) {
       keempat.hide();
@@ -600,6 +633,7 @@
       lagu.src = "#"
       kelimabelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
     } else if (event.target.value == 9) {
       keempat.hide();
       pertama.hide();
@@ -619,6 +653,7 @@
       lagu.src = "#"
       kelimabelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
     } else if (event.target.value == 10) {
       keempat.hide();
       pertama.hide();
@@ -638,6 +673,7 @@
       lagu.src = "#"
       keempatbelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
     }  else if (event.target.value == 11) {
       keempat.hide();
       pertama.hide();
@@ -656,8 +692,30 @@
       keduabelas.hide();
       lagu.src = "#"
       keempatbelas.hide();
+      ketujuhbelas.hide();
       keenambelas.css('display', 'flex');
-    } else {
+    }else if (event.target.value == 12) {
+      keempat.hide();
+      pertama.hide();
+      kedua.hide();
+      ketiga.hide();
+      kelima.hide();
+      formaing.hide();
+      keenam.hide();
+      ketujuh.hide();
+      kedelapan.hide();
+      kesembilan.hide();
+      kesebelas.hide();
+      kesepuluh.hide();
+      kelimabelas.hide();
+      ketigabelas.hide()
+      keduabelas.hide();
+      lagu.src = "#"
+      keempatbelas.hide();
+      keenambelas.hide();
+      ketujuhbelas.css('display', 'flex');
+    }
+     else {
       formaing.css('display', 'flex');
       pertama.hide();
       kedua.hide();
@@ -676,6 +734,7 @@
       kelimabelas.hide();
       keempatbelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
     }
   });
 
@@ -696,6 +755,7 @@
       kesebelas.hide();
       kelimabelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
     } else if (document.myname.myinput.value == '23') {
       keenam.css('display', 'flex');
       pertama.hide();
@@ -713,6 +773,7 @@
       keempatbelas.hide();
       kelimabelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
       lagu.src = "../img/Andien - Indahnya Dunia.mpeg"
     } else if ((document.myname.myinput.value == 'Pride and Prejudice' || document.myname.myinput.value ==
         'Pride & Prejudice')) {
@@ -733,6 +794,7 @@
       keempatbelas.hide();
       kelimabelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
     } else if ((document.myname.myinput.value == 'Honey' || document.myname.myinput.value == 'honey')) {
       kedelapan.css('display', 'flex');
       pertama.hide();
@@ -751,6 +813,7 @@
       keempatbelas.hide();
       kelimabelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
     } else if (document.myname.myinput.value == 'gelaspecah') {
       kesembilan.css('display', 'flex');
       pertama.hide();
@@ -769,6 +832,7 @@
       lagu.src = "#"
       kelimabelas.hide();
       keenambelas.hide();
+      ketujuhbelas.hide();
 
     }
   }
